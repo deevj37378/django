@@ -17,3 +17,7 @@ def home(request):
     if request.method == 'POST':
         form = ReservationForm(request.POST)
         if form.is_valid(): #If the form is valid then save it to the database
+            form.save()
+            return HttpResponse("Success")
+
+    return render(request, 'index.html', {'form': form})
