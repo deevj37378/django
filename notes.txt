@@ -1,0 +1,18 @@
+//a library is a bunch of frameworks that solves a specific task for example react, whereas a web framework does not provide any functionality but it gives a set of rules or protocol to write the code in. 
+
+Django follows MVT(Model View Template) model.
+Model - Used to structue and store data
+View - Handling the user interaction with our application
+Template- is the user interface
+
+Django receives the URL, checks the urls.py file, and calls the view that matches the URL.
+The view, located in views.py, checks for relevant models.
+The models are imported from the models.py file.
+The view then sends the data to a specified template in the template folder.
+The template contains HTML and Django tags, and with the data it returns finished HTML content back to the browser.
+
+request and response object is used to interact with the user, it uses http headers such as get and post.
+
+We will now create classes that will inherit from the django model class
+
+Migrations is a process of creating an actual table in the database from the models.py file 
